@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aniket Ghaturle</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #4ac1a1, #8bd3c7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .initial-avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4ac1a1, #8bd3c7);
+            color: #1b6452;
+            font-size: 60px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 6px solid rgba(255,255,255,0.35);
+            box-shadow: 0 8px 25px rgba(255,255,255,0.35);
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 20px;
+            opacity: 0.85;
+            margin-bottom: 12px;
+        }
+        p {
+            opacity: 0.9;
+            line-height: 1.6;
+            max-width: 550px;
+        }
+
+        .btn-group a {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-right: 12px;
+        }
+        .primary-btn {
+            background: white;
+            color: #1b6452;
+        }
+        .primary-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255,255,255,0.4);
+        }
+        .outline-btn {
+            border: 2px solid white;
+            color: white;
+        }
+        .outline-btn:hover {
+            background: white;
+            color: #1b6452;
+        }
+
+        /* Skills section */
+        .skills {
+            margin-top: 45px;
+        }
+        .skills h2 {
+            margin-bottom: 10px;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .skill-tags span {
+            padding: 8px 18px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        @media(max-width: 768px) {
+            .top-section {
+                text-align: center;
+                justify-content: center;
+            }
+            p {
+                margin: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-section">
+            <div>
+                <h1>Aniket Ghaturle</h1>
+                <h3>Full Stack  Developer | Web Designer | Learner</h3>
+                <p>
+                    Skilled and experienced in building scalable, high-performance applications. Proficient in JAVA, 
+                    C++, DBMS, and Python. Passionate about creating responsive and user-friendly interfaces.  
+                    Experienced in management and Web authentication. Adept at collaborating with cross-functional 
+                    teams to develop innovative and efficient  solutions. Committed to writing clean, maintainable 
+                    code and staying updated with the latest technologies. 
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="primary-btn">Download Resume</a>
+                    <a href="#projects" class="outline-btn">Projects</a>
+                </div>
+            </div>
+
+            <div class="initial-avatar">AG</div>
+        </div>
+
+        <div class="skills">
+            <h2>🛠 Skills & Tools</h2>
+            <div class="skill-tags">
+                <span>Programming Language</span>
+                <span>Web Technologies</span>
+                <span>Database</span>
+                <span>Data Structure & Algorithm</span>
+                <span>Tools & Platforms</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
