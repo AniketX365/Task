@@ -1,71 +1,59 @@
-# 🌟 Personal Portfolio — Aniket Ghaturle
+# 🌐 Personal Portfolio Website — Aniket Ghaturle
 
-This is a personal portfolio website built using **pure HTML & CSS** — no frameworks and no JavaScript.  
-The site highlights my skills, experience, and projects in a clean and modern UI using a calming pastel gradient theme.
+This is a modern, responsive personal portfolio website built using **pure HTML + CSS** (no JavaScript, no frameworks).
 
----
+It includes:
 
-## 🖥️ Preview
-
-A beautiful responsive UI featuring:
-- Glassmorphism card effect
-- Avatar made from initials (instead of an image)
-- Soft & eye-friendly teal gradient
-- Readable typography and spacing
+- Typing animation on the name
+- Initial avatar with hover animation
+- Elegant glassmorphism UI
+- Sections for Skills, Education, Projects, and Contact details
 
 ---
 
-## 🚀 Technologies Used
+## 🚀 Features
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5      | Website structure |
-| CSS3       | Styling, layout, UI design |
-| Git        | Version control |
-| GitHub     | Code hosting & version history |
-
----
-
-## ✨ Features
-
-- Fully responsive portfolio layout  
-- Initials-based profile avatar (no image required)
-- Gradient + glass-morphism styling
-- Buttons for resume download & project navigation
-- Skills section represented as tags
+| Feature               | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| ✅ No JavaScript Used | Fully functional using only HTML + CSS           |
+| ✅ Glass UI Design    | Blurred glass container with gradient background |
+| ✅ Hover Animations   | Avatar and skill tags have smooth hover effects  |
+| ✅ Resume Integration | Includes a "Download Resume" button              |
+| ✅ Responsive Layout  | Works on laptops, tablets, and mobile devices    |
 
 ---
 
-## 📁 Project Structure
-> *(Note: CSS is embedded inside HTML for simplicity in this version.)*
+## 📌 Project Structure
+
+> The project contains **one HTML file only**. No external CSS or JS files are required.
 
 ---
 
-## 📄 Sections Included
+## ✨ Sections Included
 
-- About Me / Introduction
-- Initials Profile Avatar
-- Skills & Technologies
-- Resume Button (placeholder)
-- Projects navigation placeholder
-
----
-
-## 🧠 What I Learned While Building This
-
-- Structuring a webpage using semantic HTML
-- Designing UI using pure CSS (no framework)
-- CSS Flexbox for responsive layouts
-- Using Git & GitHub effectively:
-  - Creating commits
-  - Pushing changes after each session
-  - Writing meaningful commit messages
+- **Header (Name + Role + Avatar + Typing Effect)**
+- **Skills & Tools**
+- **Education**
+- **Major Projects & Experience**
+- **Contact Information**
 
 ---
 
-## 🛠 Git Commands Used
+## 🖥️ Technologies Used
 
-```sh
-git add .
-git commit -m "Added portfolio UI with new theme"
-git push
+| Technology    | Purpose                                  |
+| ------------- | ---------------------------------------- |
+| HTML5         | Webpage structure                        |
+| CSS3          | Styling, hover effects, typing animation |
+| Glassmorphism | Modern UI theme                          |
+
+> No JavaScript, No Bootstrap, No external libraries.
+
+---
+
+## 📸 Preview
+
+> Hover the avatar to see the smooth glow effect ✨  
+> Watch the name type automatically when page loads ⌨️
+
+---
