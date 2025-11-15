@@ -1,197 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Aniket Ghaturle</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile | Aniket Ghaturle</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+  <link rel="stylesheet" href="style.css">
 
-        body {
-            background: linear-gradient(135deg, #4ac1a1, #8bd3c7);
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 40px;
-        }
-        
-       .container {
-            width: 100%;
-            max-width: 1100px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(12px);
-            border-radius: 25px;
-            padding: 40px;
-            box-shadow: 0 25px 60px rgba(0,0,0,0.4);
-        }
-
-        .top-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .initial-avatar {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            background: white;
-            color: #1b6452;
-            font-size: 60px;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 6px solid rgba(255,255,255,0.45);
-            box-shadow: 0 8px 30px rgba(255,255,255,0.55);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
-
-        .initial-avatar:hover {
-            transform: scale(1.12);
-            box-shadow: 0 0 35px rgba(255,255,255,0.85);
-        }
-
-        h1 { font-size: 42px; font-weight: bold; }
-        h3 { font-size: 20px; opacity: 0.9; margin-bottom: 12px; }
-        p { opacity: 0.9; line-height: 1.6; margin-bottom: 20px; max-width: 550px; }
-
-        .btn-group a {
-            display: inline-block;
-            padding: 14px 28px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-            margin-right: 12px;
-        }
-        .primary-btn { background: white; color: #1b6452; }
-        .primary-btn:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 18px rgba(255,255,255,0.5);
-        }
-        .outline-btn { border: 2px solid white; color: white; }
-        .outline-btn:hover { background: white; color: #1b6452; }
-
-        .section-title {
-            font-size: 28px;
-            margin: 45px 0 18px;
-            font-weight: bold;
-        }
-
-        
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .skill-tags span {
-            padding: 8px 18px;
-            background: rgba(255,255,255,0.25);
-            border-radius: 25px;
-            backdrop-filter: blur(5px);
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-        }
-        .skill-tags span:hover {
-            transform: scale(1.12);
-            background: white;
-            color: #1b6452;
-            box-shadow: 0 0 10px rgba(255,255,255,0.7);
-        }
-
-        .project-card, .edu-card {
-            background: rgba(255,255,255,0.18);
-            padding: 18px 22px;
-            border-radius: 18px;
-            margin-bottom: 18px;
-            border-left: 6px solid white;
-        }
-
-        .project-card h4, .edu-card h4 {
-            font-size: 20px;
-            margin-bottom: 6px;
-            font-weight: 600;
-        }
-
-        .contact a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin-top: 6px;
-            opacity: 0.9;
-        }
-        .contact a:hover { text-decoration: underline; }
-
-        @media(max-width: 768px) {
-            .top-section { text-align: center; justify-content: center; }
-        }
-
-    </style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
 
 <div class="container">
 
-    <div class="top-section">
-        <div>
-            <h1>Aniket Ghaturle</h1>
-            <h3>Full Stack Developer | Web Designer | IoT Project Builder</h3>
+  <div class="top-section">
 
-            <p>
-                Skilled in Java, C++, Python, DBMS, HTML, CSS, JS and building scalable applications.  
-                Experienced in IoT projects & Full Stack development. Passionate about creating responsive, user-friendly interfaces.
-            </p>
+    <div class="hero">
+      <div class="hero-heading">
+        <h1 id="typingName"></h1>
+        <div class="subtitle">Full Stack Developer · Web Designer · IoT Builder</div>
+      </div>
 
-            <div class="btn-group">
-                <a href="resume.pdf" class="primary-btn" download>Download Resume</a>
-                <a href="#projects" class="outline-btn">View Projects</a>
-            </div>
-        </div>
+      <p class="desc">
+        “I am a passionate Full Stack Developer and IoT enthusiast with hands-on experience 
+        in Java, C++, Python, and modern web technologies. 
+        I build scalable, responsive applications and intuitive user interfaces, blending creativity with functionality. 
+        Skilled in connecting hardware with software, I aim to craft smart, efficient solutions that make everyday tasks smarter and digital experiences seamless.”
+      </p>
 
-        <div class="initial-avatar">AG</div>
+      <div class="btn-group">
+        <a href="#" class="primary-btn" id="openResumeBtn">Open Resume</a>
+        <a href="#projects" class="outline-btn">View Projects</a>
+      </div>
     </div>
 
-    <h2 class="section-title">🛠 Skills & Tools</h2>
-    <div class="skill-tags">
-        <span>Java</span><span>Python</span><span>C++</span><span>HTML</span>
-        <span>CSS</span><span>JavaScript</span><span>React.js</span><span>Node.js</span>
-        <span>MySQL</span><span>MongoDB</span><span>DSA</span><span>VS Code</span>
+    <div class="avatar-wrap">
+      <div class="glow-ring"></div>
+      <img src="futuristic_avatar.png" alt="Aniket Avatar" class="profile-avatar" id="profilePhoto">
     </div>
 
-    <h2 class="section-title">🎓 Education</h2>
+  </div>
 
-    <div class="edu-card"><h4>B.Tech (Computer Technology)</h4><p>RTMNU Nagpur — CGPA: 6.98</p></div>
-    <div class="edu-card"><h4>HSC — 89.16%</h4><p>GBMM Junior College</p></div>
-    <div class="edu-card"><h4>SSC — 65%</h4><p>St. John’s Convent School</p></div>
+  <h2 class="section-title">🛠 Skills & Tools</h2>
+  <div class="skill-tags fade-in">
+    <a href="https://www.oracle.com/java/" target="_blank">Java</a>
+    <a href="https://www.python.org/" target="_blank">Python</a>
+    <a href="https://cplusplus.com/doc/tutorial/" target="_blank">C++</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
+    <a href="https://react.dev/" target="_blank">React.js</a>
+    <a href="https://nodejs.org/en" target="_blank">Node.js</a>
+    <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+    <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+    <a href="https://leetcode.com/explore/" target="_blank">DSA</a>
+    <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
+  </div>
 
-    <h2 class="section-title" id="projects">📂 Major Projects & Experience</h2>
+  <h2 class="section-title">🎓 Education</h2>
+  <div class="edu-card fade-in"><h4>B.Tech (Computer Technology)</h4><p>RTMNU Nagpur — CGPA: 6.98</p></div>
+  <div class="edu-card fade-in"><h4>HSC — 89.16%</h4><p>GBMM Junior College</p></div>
 
-    <div class="project-card"><h4>INTELLIGAS — IoT Leak Detection System</h4></div>
-    <div class="project-card"><h4>Gas Leak Monitoring — Arduino IoT</h4></div>
-    <div class="project-card"><h4>SOIL SMART — Intelligent Soil Analysis</h4></div>
-    <div class="project-card"><h4>Spotify Clone (HTML + CSS)</h4></div>
-    <div class="project-card"><h4>Internship — Full Stack (.NET)</h4></div>
+  <h2 class="section-title" id="projects">📂 Major Projects & Experience</h2>
+  <div class="projects-grid">
+    <div class="project-card fade-in"><h4>INTELLIGAS — IoT Leak Detection System</h4><p>Real-time gas leak alert system with sensor network.</p></div>
+    <div class="project-card fade-in"><h4>SOIL SMART — Intelligent Soil Analysis</h4><p>Sensor-based farm soil monitoring & optimization.</p></div>
+    <div class="project-card fade-in"><h4>Spotify Clone</h4><p>HTML & CSS responsive UI mimicking Spotify player.</p></div>
+    <div class="project-card fade-in"><h4>Portfolio Website</h4><p>Responsive futuristic portfolio website (this project).</p></div>
+    <div class="project-card fade-in"><h4>IoT Home Automation</h4><p>Controlling home devices via web interface & mobile alerts.</p></div>
+    <div class="project-card fade-in"><h4>Smart Attendance System</h4><p>IoT-based student attendance tracker with notifications.</p></div>
+  </div>
 
-    <h2 class="section-title">📞 Contact</h2>
-    <div class="contact">
-        <a>Email: aniketsghaturle@gmail.com</a>
-        <a>Phone: +91 8799808871</a>
-        <a href="#" target="_blank">LinkedIn</a>
-        <a href="#" target="_blank">GitHub</a>
-    </div>
+  <h2 class="section-title">📞 Contact</h2>
+  <div class="contact-grid">
+    <a class="contact-card" href="mailto:aniketsghaturle@gmail.com" target="_blank">
+      <i class="icon ri-mail-line"></i>
+      <span>Email</span>
+      <p>aniketsghaturle@gmail.com</p>
+    </a>
+    <a class="contact-card" href="tel:+918799808871">
+      <i class="icon ri-phone-line"></i>
+      <span>Phone</span>
+      <p>+91 8799808871</p>
+    </a>
+    <a class="contact-card" href="#" target="_blank">
+      <i class="icon ri-linkedin-box-line"></i>
+      <span>LinkedIn</span>
+      <p>Open Profile</p>
+    </a>
+    <a class="contact-card" href="#" target="_blank">
+      <i class="icon ri-github-fill"></i>
+      <span>GitHub</span>
+      <p>View Projects</p>
+    </a>
+    <a class="contact-card available">
+      <i class="icon ri-checkbox-circle-fill"></i>
+      <span>Status</span>
+      <p>Available for Work</p>
+    </a>
+  </div>
 
 </div>
 
+<div class="modal" id="resumeModal">
+  <div class="modal-card fade-in">
+    <div class="modal-header">
+      <img src="futuristic_avatar.png" alt="avatar">
+      <div>
+        <strong style="font-size:16px">Aniket S. Ghaturle</strong>
+        <div style="font-size:13px;opacity:.85">B.Tech • Full Stack / IoT</div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <p>View or download my resume below.</p>
+      <div class="modal-buttons">
+        <a href="resume ANIKET word xiii.pdf" target="_blank" class="primary-btn">View Resume</a>
+        <a href="resume ANIKET word xiii.pdf" download class="outline-btn">Download</a>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button id="closeModal" class="outline-btn close-btn">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
